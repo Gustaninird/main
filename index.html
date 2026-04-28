@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustanini FoodTruck – Comida Criolla Fusión | Santo Domingo</title>
+  <meta name="description" content="Gustanini FoodTruck – La mejor comida criolla fusión de Santo Domingo. Hamburguesas gourmet, picaderas y más. Av. Gustavo Mejía Ricart 35. Lun–Dom 5PM–11:30PM." />
+  <meta name="keywords" content="food truck Santo Domingo, comida criolla moderna, hamburguesas gourmet RD, gustaninird, comida urbana dominicana" />
+  <meta property="og:title" content="Gustanini FoodTruck – Comida Criolla Fusión" />
+  <meta property="og:description" content="Una combinación criolla que debes probar. Santo Domingo, RD." />
+  <meta property="og:type" content="restaurant" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="Gustanini FoodTruck">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" height="48" aria-hidden="true">
+          <!-- Steam wisps -->
+          <path d="M148 28 Q150 18 148 10" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M155 30 Q158 17 155 8" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M162 28 Q164 18 162 10" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <!-- Wordmark -->
+          <text x="10" y="62" font-family="Georgia, serif" font-size="52" font-weight="400" fill="#2A9D8F" letter-spacing="-1">Gustanini</text>
+          <!-- Tagline with knife/fork -->
+          <line x1="30" y1="76" x2="58" y2="76" stroke="#7B4F28" stroke-width="1.5"/>
+          <text x="16" y="79" font-family="Arial, sans-serif" font-size="9" fill="#7B4F28">🍴</text>
+          <text x="62" y="79" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#7B4F28" letter-spacing="3">DATE UN GUSTICO</text>
+          <line x1="234" y1="76" x2="262" y2="76" stroke="#7B4F28" stroke-width="1.5"/>
+          <text x="263" y="79" font-family="Arial, sans-serif" font-size="9" fill="#7B4F28">🍴</text>
+        </svg>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+        <li><a href="#contacto" class="nav-link nav-cta">Contáctanos</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="establecimiento.jpg" alt="Gustanini FoodTruck – Ambiente del establecimiento" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🔥 Food Truck · Santo Domingo</div>
+      <h1 class="hero-title">
+        Una combinación<br /><span class="accent">criolla</span> que debes<br />probar.
+      </h1>
+      <p class="hero-subtitle">Comida criolla con sabor único. Lunes a Domingo, 5PM – 11:30PM.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary" id="hero-menu-btn">Ver Menú</a>
+        <a href="https://www.pedidosya.com.do/restaurantes/santo-domingo-d.n./gustanini-foodtruck-menu" target="_blank" rel="noopener" class="btn btn-pedidosya" id="hero-pedidosya-btn">📦 ¡Pedir Ahora!</a>
+        <a href="#ubicacion" class="btn btn-outline" id="hero-map-btn">¿Cómo Llegar?</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" data-target="500">0</span><span>+</span><p>Clientes/Semana</p></div>
+    <div class="stat-item"><span class="stat-num" data-target="20">0</span><span>+</span><p>Platos en Menú</p></div>
+    <div class="stat-item"><span class="stat-num" data-target="4">0</span><span>.8★</span><p>Calificación</p></div>
+    <div class="stat-item"><span class="stat-num" data-target="3">0</span><span>+</span><p>Años de Sabor</p></div>
+  </div>
+
+  <!-- SLOGAN STRIP -->
+  <div class="slogan-strip">
+    <div class="slogan-inner">
+      <span class="slogan-deco">✦</span>
+      <p class="slogan-text">Una combinación <em>criolla</em> que debes probar.</p>
+      <span class="slogan-deco">✦</span>
+    </div>
+  </div>
+
+  <!-- MENÚ -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo que ofrecemos</span>
+        <h2 class="section-title">Nuestro <span class="accent">Menú</span></h2>
+        <p class="section-desc">Sabores criollos con un toque único. Cada plato, una experiencia.</p>
+        <a href="https://www.pedidosya.com.do/restaurantes/santo-domingo-d.n./gustanini-foodtruck-menu" target="_blank" rel="noopener" class="btn btn-pedidosya" style="margin-top: 20px;">📦 ¡Pedir Ahora!</a>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="picaderas" id="tab-picaderas" role="tab">🫓 Entradas</button>
+        <button class="tab-btn" data-tab="bebidas" id="tab-bebidas" role="tab">🥤 Bebidas</button>
+        <button class="tab-btn" data-tab="especiales" id="tab-especiales" role="tab">⭐ Combos</button>
+      </div>
+
+<!-- Entradas -->
+      <div class="menu-grid tab-content active" id="tab-picaderas-content">
+        <div class="menu-card featured">
+          <div class="featured-badge">🔥 Más Vendido</div>
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="La batea" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>La batea</h3><span class="price">RD$1,500</span></div>
+            <p>5 Porciones de cada: chicharrón, longaniza, carnita de res, tostones, yuca, batata, caldo de la casa y limón.</p>
+            <div class="menu-tags"><span>Para Compartir</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Ceviche De Chicharrón" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Ceviche De Chicharrón</h3><span class="price">RD$700</span></div>
+            <p>Chicharrón de la casa, crutones de batata, jugo de agrios, cebolla, cilantro fresco y aceite de oliva.</p>
+            <div class="menu-tags"><span>Recomendado</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Ceviche de chicharrón XL" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Ceviche de chicharrón XL</h3><span class="price">RD$1,200</span></div>
+            <p>Delicioso chicharrón, crutones de yuca, cilantro fresco, cebolla y aceite de oliva.</p>
+            <div class="menu-tags"><span>XL</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Chicharrón de lux" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Chicharrón de lux</h3><span class="price">RD$750</span></div>
+            <p>Acompañado de limón y acompañamiento de su elección.</p>
+            <div class="menu-tags"><span>Clásico</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="La Longa" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>La Longa</h3><span class="price">RD$650</span></div>
+            <p>Deliciosa Longaniza artesanal, con la guarnición de su preferencia, tostones, yuca o batata.</p>
+            <div class="menu-tags"><span>RD Flavor</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Pastel en hoja" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Pie grande de yuca</h3><span class="price">RD$550</span></div>
+            <p>Pastel de hoja en yuca, tope especial de vaca borracha, coronado con queso rallado, cebolla, cilantro y aderezo.</p>
+            <div class="menu-tags"><span>Tradicional</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Pie Grande Plátano" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Pie Grande Plátano</h3><span class="price">RD$550</span></div>
+            <p>Pastel en hojas relleno de pollo o res. Colocar en notas el relleno de su preferencia.</p>
+            <div class="menu-tags"><span>Tradicional</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_picaderas.png" alt="Chimirron" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Chimirron</h3><span class="price">RD$595</span></div>
+            <p>Clásico, con chicharrón y cebollita en salsa rosa de la casa.</p>
+            <div class="menu-tags"><span>Clásico</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="menu-grid tab-content" id="tab-bebidas-content">
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_bebidas.png" alt="Bastones de yuca" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Bastones de yuca</h3><span class="price">RD$130</span></div>
+            <p>Acompañamiento versátil que se puede disfrutar con prácticamente cualquier plato principal.</p>
+            <div class="menu-tags"><span>Acompañamiento</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_bebidas.png" alt="Batata frita" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Batata frita</h3><span class="price">RD$130</span></div>
+            <p>Acompañamiento dorado y crujiente.</p>
+            <div class="menu-tags"><span>Acompañamiento</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_bebidas.png" alt="Tostones" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Tostones</h3><span class="price">RD$130</span></div>
+            <p>Rodajas de plátano frito.</p>
+            <div class="menu-tags"><span>Acompañamiento</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="menu_bebidas.png" alt="Longaniza" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Longaniza (Extra)</h3><span class="price">RD$350</span></div>
+            <p>Extra de longaniza.</p>
+            <div class="menu-tags"><span>Extra</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Especiales -->
+      <div class="menu-grid tab-content" id="tab-especiales-content">
+        <div class="menu-card featured">
+          <div class="featured-badge">🔥 Combo Estrella</div>
+          <div class="menu-card-img"><img src="hero_burger.png" alt="Mofongo El Gustanini + Extra" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Mofongo El Gustanini + Extra</h3><span class="price">RD$1,150</span></div>
+            <p>Combinación de plátano verde, bañado en salsa 4 quesos, tope de salchicha italiana a la romana en salsa pomodoro y cebolla encurtida. <strong>Con Extra de Carnita Gratis</strong></p>
+            <div class="menu-tags"><span>32% OFF</span><span>Oferta</span></div>
+          </div>
+        </div>
+        <div class="menu-card featured">
+          <div class="featured-badge">⭐ Happy Hour</div>
+          <div class="menu-card-img"><img src="menu_chicken.png" alt="Mofongo El Fisti Fisti + Extra" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Mofongo El Fisti Fisti + Extra</h3><span class="price">RD$1,200</span></div>
+            <p>Mofongo de cepa de apio, relleno de chicharrón, bañado en salsa de pimientos rojos asados, topo de bacon, queso mozzarella, rúcula y gotas de aceite de sésamo. <strong>Con Extra de Carnita Gratis</strong></p>
+            <div class="menu-tags"><span>32% OFF</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="hero_burger.png" alt="Gustanini de yuca + Extra" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Gustanini de yuca + Extra</h3><span class="price">RD$1,100</span></div>
+            <p>Mofongo de yuca relleno de chicharrón, acompañado con salsa 4 quesos, salchichas italianas y cebolla encurtida. <strong>Con Extra de Carnita Gratis</strong></p>
+            <div class="menu-tags"><span>32% OFF</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="hero_burger.png" alt="EL clásico + Extra" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>EL clásico + Extra</h3><span class="price">RD$1,100</span></div>
+            <p>Plátano verde/ Chicharrón/ tope pico de gallo y caldo de la casa. <strong>Con Extra de Carnita Gratis</strong></p>
+            <div class="menu-tags"><span>32% OFF</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="hero_burger.png" alt="El pegao + Extra" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>El pegao + Extra</h3><span class="price">RD$1,100</span></div>
+            <p>Mofongo de batata, relleno de carne de res, topo de salchicha en salsa pomodoro acompañado de salsa 4 quesos. <strong>Con Extra de Carnita Gratis</strong></p>
+            <div class="menu-tags"><span>32% OFF</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="section about-section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <img src="establecimiento.jpg" alt="Gustanini FoodTruck – Nuestro establecimiento" class="about-main-img" />
+        </div>
+        <div class="about-chef-card">
+          <img src="chef_portrait.png" alt="Chef @chefmanurd" />
+          <div>
+            <strong>@chefmanurd</strong>
+            <span>Chef & Fundador</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Nuestra Historia</span>
+        <h2 class="section-title">Pasión criolla,<br /><span class="accent">sabor urbano.</span></h2>
+        <p>Gustanini nació de la idea simple pero poderosa: llevar los sabores auténticos de la cocina dominicana a las calles de Santo Domingo, pero con un twist moderno y urbano que enamorara a las nuevas generaciones.</p>
+        <p>Nuestro chef <strong>@chefmanurd</strong> fusiona técnicas de cocina contemporánea con recetas criollas heredadas, creando una experiencia gastronómica única que no encuentras en ningún otro lugar.</p>
+        <div class="about-values">
+          <div class="value-item"><span>🌿</span><div><strong>Ingredientes frescos</strong><p>Seleccionados diariamente en el mercado local.</p></div></div>
+          <div class="value-item"><span>🔥</span><div><strong>Cocina al momento</strong><p>Todo preparado fresco, nunca pre-cocinado.</p></div></div>
+          <div class="value-item"><span>❤️</span><div><strong>Sabor auténtico</strong><p>Recetas criollas con identidad propia.</p></div></div>
+        </div>
+        <a href="https://www.instagram.com/gustaninird" target="_blank" rel="noopener" class="btn btn-primary" id="ig-about-btn">Síguenos en Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros momentos</span>
+        <h2 class="section-title">La <span class="accent">Galería</span></h2>
+        <p class="section-desc">Una imagen vale más que mil palabras. Y estas valen mil antojos.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large"><img src="pict/Captura de pantalla 2026-04-27 214701.png" alt="Gustanini ambiente" loading="lazy" /><div class="gallery-overlay"><span>Ambiente</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214637.png" alt="Gustanini food" loading="lazy" /><div class="gallery-overlay"><span>Platos</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214600.png" alt="Gustanini comida" loading="lazy" /><div class="gallery-overlay"><span>Mofongos</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214545.png" alt="Gustanini especiales" loading="lazy" /><div class="gallery-overlay"><span>Especiales</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214502.png" alt="Gustanini truck" loading="lazy" /><div class="gallery-overlay"><span>Food Truck</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214442.png" alt="Gustanini bebidas" loading="lazy" /><div class="gallery-overlay"><span>Bebidas</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214411.png" alt="Gustanini picaderas" loading="lazy" /><div class="gallery-overlay"><span>Picaderas</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214347.png" alt="Gustanini platos" loading="lazy" /><div class="gallery-overlay"><span>Sabores</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214324.png" alt="Gustanini detalles" loading="lazy" /><div class="gallery-overlay"><span>Detalles</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214304.png" alt="Gustanini ambiente" loading="lazy" /><div class="gallery-overlay"><span>Nuestro Espacio</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 214244.png" alt="Gustanini comida" loading="lazy" /><div class="gallery-overlay"><span>ParaCompartir</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 213635.png" alt="Gustanini gourmet" loading="lazy" /><div class="gallery-overlay"><span>Gourmet</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 213613.png" alt="Gustanini criollo" loading="lazy" /><div class="gallery-overlay"><span>Criollo</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 194912.png" alt="Gustanini final" loading="lazy" /><div class="gallery-overlay"><span>Visítanos</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 194851.png" alt="Gustanini platos" loading="lazy" /><div class="gallery-overlay"><span>Platos</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 194742.png" alt="Gustanini cena" loading="lazy" /><div class="gallery-overlay"><span>Cena</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 194256.png" alt="Gustanini únicos" loading="lazy" /><div class="gallery-overlay"><span>Sabores Únicos</span></div></div>
+        <div class="gallery-item"><img src="pict/Captura de pantalla 2026-04-27 193513.png" alt="Gustanini gustico" loading="lazy" /><div class="gallery-overlay"><span>Date un Gustico</span></div></div>
+      </div>
+      <div class="gallery-cta">
+        <a href="https://www.instagram.com/gustaninird" target="_blank" rel="noopener" class="btn btn-outline" id="ig-gallery-btn">
+          Ver más en @gustaninird ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="section location-section" id="ubicacion">
+    <div class="container location-grid">
+      <div class="location-info">
+        <span class="section-tag">Encuéntranos</span>
+        <h2 class="section-title">¿Dónde <span class="accent">estamos?</span></h2>
+        <div class="location-detail">
+          <div class="loc-item">
+            <span class="loc-icon">📍</span>
+            <div><strong>Dirección</strong><p>Av. Gustavo Mejía Ricart 35, Santo Domingo, RD</p></div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">🕔</span>
+            <div><strong>Horario</strong><p>Lunes a Domingo<br />5:00 PM – 11:30 PM</p></div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">📞</span>
+            <div><strong>WhatsApp</strong><p><a href="https://wa.me/18091234567" target="_blank" rel="noopener" id="wa-loc-link">+1 (809) 123-4567</a></p></div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/place/GustaniniRD/@18.4756033,-69.9277472,17z" target="_blank" rel="noopener" class="btn btn-primary" id="maps-btn">Abrir en Google Maps</a>
+      </div>
+      <div class="location-map">
+        <iframe
+          title="Ubicación Gustanini FoodTruck"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1!2d-69.9251669!3d18.4756033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89c49febb793%3A0xc7b8fdb77418f4ae!2sGustaniniRD!5e0!3m2!1ses!2sdo!4v1620000000000!5m2!1ses!2sdo"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Escríbenos</span>
+        <h2 class="section-title">¿Tienes <span class="accent">preguntas?</span></h2>
+        <p class="section-desc">Contáctanos por WhatsApp o llena el formulario. Respondemos rápido.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-channels">
+          <a href="https://wa.me/18091234567" target="_blank" rel="noopener" class="channel-card wa" id="wa-main-btn">
+            <span class="channel-icon">💬</span>
+            <div><strong>WhatsApp</strong><p>Respuesta inmediata</p></div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a href="https://www.instagram.com/gustaninird" target="_blank" rel="noopener" class="channel-card ig" id="ig-contact-btn">
+            <span class="channel-icon">📸</span>
+            <div><strong>Instagram</strong><p>@gustaninird</p></div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <div class="channel-card hours-card">
+            <span class="channel-icon">🕔</span>
+            <div><strong>Horario de atención</strong><p>Lun – Dom · 5PM – 11:30PM</p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contact-name">Tu nombre</label>
+            <input type="text" id="contact-name" name="name" placeholder="Ej. María González" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">WhatsApp / Teléfono</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="+1 (809) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Mensaje</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="¿Tienes alguna pregunta, pedido especial o evento?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="contact-submit-btn">Enviar por WhatsApp 💬</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo" aria-label="Gustanini FoodTruck">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" height="44" aria-hidden="true">
+          <path d="M148 28 Q150 18 148 10" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M155 30 Q158 17 155 8" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M162 28 Q164 18 162 10" stroke="#7B4F28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <text x="10" y="62" font-family="Georgia, serif" font-size="52" font-weight="400" fill="#2A9D8F" letter-spacing="-1">Gustanini</text>
+          <line x1="30" y1="76" x2="58" y2="76" stroke="#7B4F28" stroke-width="1.5"/>
+          <text x="16" y="79" font-family="Arial, sans-serif" font-size="9" fill="#7B4F28">🍴</text>
+          <text x="62" y="79" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#7B4F28" letter-spacing="3">DATE UN GUSTICO</text>
+          <line x1="234" y1="76" x2="262" y2="76" stroke="#7B4F28" stroke-width="1.5"/>
+          <text x="263" y="79" font-family="Arial, sans-serif" font-size="9" fill="#7B4F28">🍴</text>
+        </svg>
+      </a>
+        <p>Comida criolla fusión en el corazón de Santo Domingo. Una experiencia que vuelves a buscar.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/gustaninird" target="_blank" rel="noopener" aria-label="Instagram" id="footer-ig">📸</a>
+          <a href="https://wa.me/18091234567" target="_blank" rel="noopener" aria-label="WhatsApp" id="footer-wa">💬</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <strong>Navegación</strong>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <div class="footer-links">
+        <strong>Contacto</strong>
+        <a href="https://wa.me/18091234567" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/gustaninird" target="_blank" rel="noopener">@gustaninird</a>
+        <p>Av. Gustavo Mejía Ricart 35<br />Santo Domingo, RD</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Gustanini FoodTruck · Todos los derechos reservados · Hecho con ❤️ en Santo Domingo</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/18091234567" target="_blank" rel="noopener" class="wa-float" id="wa-float" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.032 7.797L0 32l8.414-2.004A15.933 15.933 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.77-1.85l-.486-.288-5.004 1.193 1.223-4.875-.315-.498A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.274-9.947c-.398-.199-2.353-1.161-2.718-1.294-.365-.133-.63-.199-.896.199-.265.398-1.028 1.294-1.26 1.56-.232.265-.464.298-.862.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.057-1.982-2.362-2.214-2.76-.232-.398-.025-.613.175-.811.179-.178.398-.464.597-.696.199-.232.265-.398.398-.663.133-.265.066-.497-.033-.696-.1-.199-.896-2.16-1.228-2.958-.323-.777-.652-.672-.896-.684l-.763-.013c-.265 0-.696.1-1.061.497-.365.398-1.393 1.36-1.393 3.32s1.427 3.85 1.626 4.115c.199.265 2.808 4.287 6.804 6.015.951.411 1.692.656 2.271.84.954.303 1.823.26 2.51.158.766-.114 2.353-.962 2.685-1.89.332-.928.332-1.723.232-1.89-.099-.166-.365-.265-.763-.464z" fill="#fff"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
